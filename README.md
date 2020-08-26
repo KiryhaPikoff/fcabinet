@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is files cabinet. 
+You can register and add yourself text notes.
 
-Things you may want to cover:
+The appearance of the application is not very pretty, because I keep the next goals:
+1) Get acquainted with the ruby and RoR.
+2) Get acquainted with haml, css, scss.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run it:
+1) docker-compose build
+2) docker-compose run --rm web bash -c "bundle install &&"'
+                                      '"yarn install --chacked-files &&"'
+                                      '"rake db:create &&"'
+                                      '"rake db:migrate"
+3) docker-compose up                                      
