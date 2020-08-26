@@ -9,8 +9,9 @@ The appearance of the application is not very pretty, because I keep the next go
 
 Run it:
 1) docker-compose build
-2) docker-compose run --rm web bash -c "bundle install &&"'
-                                      '"yarn install --chacked-files &&"'
-                                      '"rake db:create &&"'
-                                      '"rake db:migrate"
+2) docker-compose run --rm web bash -c \\<br/>
+"bundle install &&"'<br/>
+'"yarn install --chacked-files &&"'<br/>
+'"rake db:create &&"'<br/>
+'"rake db:migrate"<br/>
 3) docker-compose up                                      
