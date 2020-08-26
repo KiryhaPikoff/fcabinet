@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     root 'docs#index', as: 'authenticated_root'
   end
 
+  root 'welcome#index'
 end

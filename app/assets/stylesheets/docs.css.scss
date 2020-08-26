@@ -1,3 +1,103 @@
-// Place all the styles related to the Docs controller here.
-// They will automatically be included in application.css.scss.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "global.css.scss";
+
+$header: #529fce;
+$doc_bg: #7a584b;
+$doc_border: #5e829f;
+
+.header {
+  color: $header;
+}
+
+#documents-table {
+  width: 100%;
+  border-spacing:0 20px;
+
+  td {
+    margin-top: 1rem;
+  }
+
+  td {
+    background: $doc_bg;
+    border-collapse: collapse;
+    border: 1px solid $doc_border;
+    border-radius: 80px;
+
+    h2 {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      color: $nav_link_color;
+      font-size: 3rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+      color: $nav_link_color;
+      text-align: center;
+    }
+  }
+}
+
+.create-doc-cont {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.create-doc-btn {
+  margin-top: 1rem;
+  background: $main_color;
+  color: $nav_link_color;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  padding: 10px 5% 10px 5%;
+  border: 1px solid $main_color;
+  border-radius: 10px;
+}
+
+.doc-create-table {
+  label {
+    margin-top: 1rem;
+    margin-right:0.5em;
+    width:5em;
+    float:left;
+    text-align:left;
+    display:block;
+  }
+
+  input {
+    margin-top: 1rem;
+    width: 40%
+  }
+
+  textarea {
+    margin-top: 1rem;
+    width: 40%;
+    height: 5rem;
+  }
+}
+
+.doc-btns-table {
+  width: 100%;
+  max-width: 1200px;
+  cell-spacing:0 20px;
+
+  td {
+    background: $main_color;
+    border-collapse: collapse;
+    border: 1px solid $doc_border;
+    border-radius: 80px;
+
+    a {
+      display: block;
+      color: $nav_link_color;
+      font-size: 1.5rem;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}

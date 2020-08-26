@@ -1,6 +1,13 @@
-%h1= @doc.title
+%h1
+  .header
+    = @doc.title
 %p= @doc.content
 
-= link_to "All Docks", docs_path
-= link_to "Fix Doc", edit_doc_path(@doc)
-= link_to "Trash It", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }
+%table{ class: 'doc-btns-table' }
+  %tr
+    %td
+      = link_to "All Docs", docs_path
+    %td
+      = link_to "Fix Doc", edit_doc_path(@doc)
+    %td
+      = link_to "Trash It", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }

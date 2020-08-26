@@ -1,4 +1,6 @@
 = simple_form_for @doc do |f|
-  = f.input :title
-  = f.input :content
-  = f.button :submit
+  %div
+    .doc-create-table
+      = f.input :title, class: 'input'
+      = f.input :content, class: 'input'
+  = f.button :submit, class: 'create-doc-btn'
